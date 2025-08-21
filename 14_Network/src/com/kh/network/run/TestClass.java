@@ -7,6 +7,9 @@ public class TestClass {
 		
 		
 		//집가구싶다
+		
+		//잘했다 
+		//어서 집에 가자
 	}
 
 }
