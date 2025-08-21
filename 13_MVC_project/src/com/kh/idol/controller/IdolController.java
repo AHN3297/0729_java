@@ -96,9 +96,10 @@ public class IdolController {
 		
 			if(userId.equals(fan.getUserId())
 					&&
-					userPwd.equals(fan.getUserPwdd()));
-		}
-		return null;
+					userPwd.equals(fan.getUserPwd()));
+			
+		}return null;
+		
 	}
 	
 	// 로그인에 성공한 사용자가 게시글작성 요청을할 때마다 호출이 되는 메소드
@@ -128,6 +129,16 @@ public class IdolController {
 		// View에 요청에 의해 호출되며,
 		// 게시글 목록이 담겨있는 것을 되돌려 주어야함
 		return boards;
+	}
+	
+	public Board findByBoardNo(int boardNo) {
+		
+		
+		if(boardNo > this.boardNo) {
+			return null;
+		}
+		return boards.get(boardNo -1);
+		
 	}
 	
 }
