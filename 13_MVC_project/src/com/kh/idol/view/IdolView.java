@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.kh.idol.controller.IdolController;
+import com.kh.idol.model.vo.Fan;
 import com.kh.idol.model.vo.Idol;
 
 public class IdolView {
@@ -164,7 +165,9 @@ public class IdolView {
 		System.out.println("비밀번호를 입력해주세요 > ");
 		String userPwd = sc.nextLine();
 		ic.login(userId,userPwd);
+		
 	}
+	
 	
 	
 	
