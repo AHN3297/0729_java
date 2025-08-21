@@ -11,7 +11,7 @@ import com.kh.idol.model.vo.Idol;
 
 public class IdolController {
 	private List<Fan> fans = new ArrayList();
-	private List<Board> boards = new ArrayList();
+	private List<Board> boards = new ArrayList(); // <= 생성을 넣어놔서 강제 초기화 안하는 이상 Null이 될 수 없음.
 	private List<Idol> aespa = new ArrayList();
 	private int boardNo;
 
@@ -122,6 +122,12 @@ public class IdolController {
 		// 2. 요청처리
 		boards.add(board);
 		
+	}
+	
+	public List<Board> selectBoardList() {
+		// View에 요청에 의해 호출되며,
+		// 게시글 목록이 담겨있는 것을 되돌려 주어야함
+		return boards;
 	}
 	
 }
