@@ -1,5 +1,6 @@
 package com.kh.operator.run;
 
+import com.kh.operator.B_InDecrease;
 //1절
 //import com.kh.operator.A_Arithmetic;
 //import com.kh.operator.B_InDecrease;
@@ -18,8 +19,8 @@ public class Run {
 		//a.presentToStudent();
 		
 		
-		//B_InDecrease b = new B_InDecrease();
-		//b.method3();
+		B_InDecrease b = new B_InDecrease();
+		b.method3();
 		
 		C_Compound c = new C_Compound();
 		//c.method1();
@@ -30,7 +31,7 @@ public class Run {
 		F_Logical f = new F_Logical();
 		//f.method3();
 		G_Triple g = new G_Triple();
-		g.method1();
+		//g.method1();
 	}
 
 }

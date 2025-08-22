@@ -19,7 +19,7 @@ public class Run {
 		//b.inputTest();
 		Casting C = new Casting();
 		//C.autoCasting();
-		C.forceCasting();
+		C.autoCasting();
 		
 		
 	}

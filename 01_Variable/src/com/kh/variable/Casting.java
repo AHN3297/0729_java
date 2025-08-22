@@ -94,7 +94,7 @@ public class Casting {
 		//-128~127
 		
 		byte byteNum = (byte)128;
-		System.out.println(byteNum);
+		System.out.println(byteNum );
 		
 		byte b2 = 126;
 		byte b3 = 3;
