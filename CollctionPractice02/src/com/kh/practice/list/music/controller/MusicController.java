@@ -3,6 +3,7 @@ package com.kh.practice.list.music.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import com.kh.practice.list.music.model.vo.Music;
 
 public class MusicController {
@@ -24,7 +25,19 @@ public class MusicController {
 	}
 	
 	public Music searchMusic(String title) {
+		List<Music> searchList = new ArrayList();
+		for(int i = 0; i<music.size(); i++) {
+			Music m = music.get(i);
+			
+			if(m.getTitle().equals(title)) {
+				searchList.add(m);
+				
+			}else {
+				return null;
+			}
+		}
 		return null;
+		
 		
 	}
 }
