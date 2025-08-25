@@ -23,5 +23,10 @@ public class TestClass {
 		System.out.println("4. git commit -m 뭐했는지");
 		System.out.println("5. git push origin master");
 	}
+	public void bcd() {
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
 
 }
